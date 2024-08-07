@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/script.css" />
-    <title>Lucas Almeida Fernandes de Moraes - RM 557569</title>
+    <title>Nome: lucasalmeida-cmd</title>
   </head>
   <body>
-    <div id="cabecalho">
-      <h1>Nomes</h1>
-      <form>
-        <input type="text" name="nome" id="idNome" />
+
+    
+    <div id="container">
+      <form action="#" id="form-nomes">
+        <div>
+          <label for="idNome">Nome:</label>
+          <input type="text" name="nome" id="idNome" />
+        </div>
+        <div id="container-buttom">
+          <div>
+            <button type="button" id="bntAdicionar">Adicionar</button>
+          </div>
+          <div>
+            <button type="button" id="bntOrdenar">Ordenar</button>
+          </div>
+          <div>
+            <button type="button" id="bntReverter">Reverter</button>
+          </div>
+        </div>
       </form>
     </div>
 
-    <div id="botao">
-      <button type="button" id="bntAdicionar">Adicionar</button>
-      <button type="button" id="bntOrdenar">Ordenar</button>
-      <button type="button" id="bntReverter">Reverter</button>
-    </div>
+   
 
     <div>
+      <h2>Lista de Nomes:</h2>
       <ul id="lista"></ul>
     </div>
   </body>

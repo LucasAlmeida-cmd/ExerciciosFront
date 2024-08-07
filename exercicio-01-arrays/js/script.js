@@ -1,19 +1,22 @@
 let lista = document.getElementById("lista");
-nomes = [];
+let nomes = [];
 
 function renderizaLista(){
     lista.innerHTML = "";
     nomes.forEach((nome) => {
         let itemDeLista = document.createElement("li");
         itemDeLista.textContent = nome;
-        lista.appendChild(itemDeLista);// Adicionando o item ao elemento ul
+        lista.appendChild(itemDeLista);
     });
 }
 
 document.getElementById("bntAdicionar").addEventListener("click", () => {
     let nomeDigitado = document.getElementById("idNome").value;
-    nomes.push(nomeDigitado);
-    renderizaLista();
+   
+    if(nomeDigitado !== undefined && nomeDigitado !== ""){
+        nomes.push(nomeDigitado);
+        renderizaLista();
+    }
 });
 
 document.getElementById("bntOrdenar").addEventListener("click", () => {

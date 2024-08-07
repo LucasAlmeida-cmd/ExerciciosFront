@@ -7,33 +7,45 @@
   font-family: Inter, sans-serif;
 }
 
-#cabecalho {
-  position: relative;
-  height: 100px;
-}
-
-#cabecalho h1,
-#cabecalho form {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-#cabecalho h1 {
-  top: 0;
-}
-
-#cabecalho form {
-  bottom: 0;
-}
-
-#botao {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
   align-items: center;
+  justify-content: space-around;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 5% auto;
+}
+
+#container-buttom{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+button{
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
 }
